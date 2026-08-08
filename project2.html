@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration form</title>
+</head>
+
+<body>
+    <style>
+        h1 {
+            text-align: center
+        }
+
+        #div101 {
+            display: inline-block
+        }
+
+        #div102 {
+            display: inline-block
+        }
+    </style>
+    <h1>Student Registration Form</h1>
+    <fieldset>
+        <legend>Personal Info</legend>
+        <div class="row">
+            <div id="div101">
+                <label for="first name">First Name</label><br>
+                <input type="text" placeholder="enter your first name" reuired>
+            </div>
+            <div id="div102">
+                <label for="last name">Last Name</label><br>
+                <input type="text" placeholder="enter your last name" required>
+            </div>
+        </div>
+        <br>
+        <label for="email">Email</label><br>
+        <input type="email" placeholder="text@gmail.com" required><br> <br>
+        <label for="password">Password</label><br>
+        <input type="password" placeholder="****" required><br> <br>
+        <label for="phone number">Phone Number</label><br>
+        <input type="number" placeholder="03XXXXXXXXX" required><br> <br>
+        <label for="date of birth">Date Of Birth</label><br>
+        <input type="date" placeholder="dd/mm/yyyy" required><br> <br>
+        <label for="gender">Gender</label><br>
+        <label for="male">
+            <input type="radio" id="male" name="gender" value="male">
+            Male</label>
+        <label for="female">
+            <input type="radio" id="female" name="gender" value="female">
+            Female</label>
+        <label for="other">
+            <input type="radio" id="other" name="gender" value="other">
+            Other</label><br><br>
+    </fieldset>
+    <!-- education details -->
+    <fieldset>
+        <legend>Education Details</legend>
+        <!-- label for highest qualification -->
+        <label for="highest qualification">Highest Qualification</label><br>
+        <select name="qualification" id="" required>
+            <option value="matric">Matric</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Bachelors">Bachelors</option>
+        </select><br> <br>
+        <!-- field of study -->
+        <label for="field of study">Field Of Study</label><br>
+        <select name="field of study" id="" required>
+            <optgroup label="Computer Science">
+                <option value="web">Web</option>
+                <option value="web">AI/ML</option>
+                <option value="web">Data Science</option>
+            </optgroup>
+            <optgroup label="Engineering">
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+            </optgroup>
+        </select><br> <br>
+        <!-- skills -->
+        <label for="Skills">Skills</label><br>
+        <label for="html"><input type="checkbox" id="html">HTML</label>
+        <label for="css"><input type="checkbox" id="css">CSS</label>
+        <label for="java script"><input type="checkbox" id="java script">Java Script</label>
+        <label for="react"><input type="checkbox" id="react">REACT</label> <br> <br>
+    </fieldset>
+    <fieldset>
+        <legend>Uploads and Preferences</legend>
+        <label for="resume">Upload your resume</label><br>
+        <input type="file"><br> <br>
+        <label for="available time">Available Time</label><br>
+        <input type="time"><br> <br>
+        <label for="experience level">Experience Level(0-10)</label><br>
+        <input type="range" min="0" max="10"><br> <br>
+    </fieldset>
+    <fieldset>
+        <legend>Additional Information</legend>
+        <label for="about yourself">About Yourself</label><br>
+        <textarea name="feedback" placeholder="write about yourself" id="101" cols="100" rows="5"></textarea><br> <br>
+        <label for="">
+            <input type="checkbox">I agree to terms and conditions
+        </label>
+    </fieldset>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+
+
+</body>
+
+</html>
